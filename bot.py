@@ -52,7 +52,7 @@ def handle_file(message):
 if __name__ == '__main__':
     # Remove existing webhook (if any) and set a new one
     bot.remove_webhook()
-    bot.set_webhook(url=f'https://your-app-name.onrender.com/{TOKEN}')
+    bot.set_webhook(url=f'https://telefiletolink.onrender.com/{TOKEN}')
     
     # Run Flask app
     app.run(host='0.0.0.0', port=5000)
