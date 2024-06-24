@@ -2,3 +2,4 @@ pyTelegramBotAPI
 telebot
 Flask
 requests
+logging
