@@ -6,7 +6,7 @@ import logging
 logging.basicConfig(level=logging.INFO)
 
 TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN', '6226493394:AAEeoJlWJIuiUZ-UQVTElKL0f61BG7_uCOA')
-CHANNEL_ID = os.environ.get('TELEGRAM_CHANNEL_ID', '-1002148215113')  # Race with your private channel's ID
+CHANNEL_ID = os.environ.get('TELEGRAM_CHANNEL_ID', '-1002148215113')  # Replace with your private channel's ID
 bot = telebot.TeleBot(TOKEN)
 app = Flask(__name__)
 
