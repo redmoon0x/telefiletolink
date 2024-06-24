@@ -11,7 +11,7 @@ app = Flask(__name__)
 def webhook():
     update = telebot.types.Update.de_json(request.stream.read().decode('utf-8'))
     bot.process_new_updates([update])
-    return '', 200  # Return an empty string instead of '!'
+    return '', 200
 
 # Route to handle file downloads
 @app.route('/download/<file_id>', methods=['GET'])
@@ -46,7 +46,7 @@ def handle_file(message):
         return
 
     file_id = file.file_id
-    download_link = f"https://your-app-name.onrender.com/download/{file_id}"
+    download_link = f"https://telefiletolink.onrender.com/download/{file_id}"
     bot.reply_to(message, f"Here is your download link: {download_link}")
 
 if __name__ == '__main__':
